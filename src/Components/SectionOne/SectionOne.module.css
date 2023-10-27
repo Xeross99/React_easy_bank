@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+.section {
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Public Sans', sans-serif;
+    min-height: 550px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+    text-align: left;
+    max-width: 1200px;
+}
+
+.maintxt {
+    font-weight: 300;
+    font-size: 3.5rem;
+}
+
+.txt {
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-bottom: 60px;
+    color: hsl(233, 8%, 62%);
+}
+
+.images {
+    position: relative;
+    width: 100%;
+}
+
+.background {
+    position: absolute;
+    top: -110px;
+    left: -10px;
+
+}
+
+.telephones {
+    position: absolute;
+    top: -135px;
+    left: 200px;
+}
+
+
+/*****************/
+/* smartphones */
+/*****************/
+
+@media (max-width: 800px) {
+
+    .background {
+        position: absolute;
+        top: -100px;
+        left: 1%;
+        width: auto;
+        height: 1000px;
+    }
+
+    .telephones {
+        position: absolute;
+        top: -60px;
+        left: 25%;
+        width: auto;
+        height: 650px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 1400px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .images {
+        height: 230px;
+    }
+
+    .background {
+        position: absolute;
+        top: -520px;
+        left: -350px;
+        width: auto;
+        height: 1000px;
+    }
+
+    .telephones {
+        position: absolute;
+        top: -300px;
+        left: -25%;
+        width: auto;
+        height: 650px;
+    }
+}
